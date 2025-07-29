@@ -1,3 +1,4 @@
+//Print hello world on console
 function printHelloWorld() {
   console.log("Hello World!!");
 }
