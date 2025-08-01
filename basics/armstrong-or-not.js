@@ -1,17 +1,19 @@
 function isArmstrong(n) {
+  let originalNum = n;
+  let sum = 0;
   while (n > 0) {
-    let sum = 0;
-    let rem = n % 10; //371%10  -- 1 // 37%10 = 7 //3%10 = 3
-    sum = rem * rem * rem + sum; // 1*1*1 + 0 = 1 // 7*7*7 + 1 = 344 // 3*3*3 + 344 = 371
-    n = n / 10; //371/10 = 37. // 37/10 = 3 // 3/10 = 0
+    let rem = n % 10;
+    sum += rem * rem * rem;
+    n = Math.floor(n / 10);
   }
-  if (sum == n) {
-    return "Armstrong number";
-  } else {
-    return "Not a armstrong number";
-  }
+  return sum === originalNum;
 }
+
 let result = isArmstrong(371);
-console.log(result);
+if (result === true) {
+  console.log("Armstrong Number");
+} else {
+  console.log("Not an Armstrong Number");
+}
 
 //Print all armstrong number between 1-1000

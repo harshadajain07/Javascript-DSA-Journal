@@ -2,4 +2,3 @@ Basics of Programming
 Number Theory - Mathematical Computations - Binary,Decimal
 String Manipulation
 Patterns
-gi
