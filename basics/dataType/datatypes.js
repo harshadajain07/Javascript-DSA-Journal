@@ -29,3 +29,7 @@ let firstName = "Harshada";
 let lastName = "Jain";
 let fullName = firstName + " " + lastName;
 console.log(fullName);
+
+let variable = undefined;
+console.log(typeof undefined);
+console.log(variable);
